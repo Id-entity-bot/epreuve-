@@ -1,0 +1,340 @@
+*{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin:0;
+	padding: 0;
+}
+
+.content{
+	width:100vw;
+	height: 100vh;
+
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	width:500vw;
+	
+
+}
+
+.one{
+	background-color: red;
+
+}
+
+.two{
+	background-color: steelblue;
+
+}
+.three{
+	background-color: yellow;
+
+}
+.four{
+	background-color: green;
+
+}
+.five{
+	background-color: black;
+
+}
+#first{
+	transiton: translateX(100%) 0.5s ease-in-out;
+}
+
+.wrapper {
+
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+.outer-wrapper {
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display:none;
+
+
+
+/*body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+}
+
+#first{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	background: black;
+	background-size: cover;
+
+}
+
+#first a{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width :150px;
+	height:50px;
+	background: transparent;
+	border:2px solid #ff0;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	font-size :20px;
+	overflow :hidden;
+	transition :0.5s;
+
+}
+#first a:hover{
+	color: #000;
+}
+
+#first a:after{
+	content: '';
+	position: absolute;
+	top:100%;
+	left: 0;
+	width: 100%;
+	height:100%;
+	background: #ff0;
+	z-index: -1;
+	transition: 1 s;
+
+}
+#first a:hover:after{
+	top:0;
+
+}
+#second{
+	position: absolute;
+	top:0;
+	left:100%;
+	width:100%;
+	height:100%;
+	background-color:black;
+	background-size: cover;
+
+}
+
+#second .container{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+
+}
+
+#second .container .title{
+	position: absolute;
+	top:-30%;
+	left:35%;
+	width: 100px;
+	height: 100px;
+	background: #ff0;
+	z-index :1;
+	text-align: center;
+	font-size: 55px;
+	color: #000;
+	border: 2px solid #000;
+
+}
+#second .container .title h2{
+	margin-top: 4px;
+}
+#second .container img{
+	transform: scale(1.1);
+}
+
+.preview{
+	color: #ff0;
+}
+#second .container a{
+	position: absolute;
+	width: 150px;
+	height:50px;
+	background: #ff0;
+	color:#000;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	text-transform: uppercase;
+	z-index :1;
+	border : 2px solid #000;
+	text-decoration: none;
+
+}
+
+#second .container .preview a{
+	top:-2%;
+	left: -25%;
+	}
+
+#second .container .next a{
+	top:85%;
+	left:100%;
+}
+
+
+
+
+#third{
+	position: absolute;
+	top:0;
+	left:100%;
+	width:100%;
+	height:100%;
+	background-color:black;
+	background-size: cover;
+
+}
+
+#third .container{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+
+}
+
+#third .container .title{
+	position: absolute;
+	top:-30%;
+	left:35%;
+	width: 100px;
+	height: 100px;
+	background: #ff0;
+	z-index :1;
+	text-align: center;
+	font-size: 55px;
+	color: #000;
+	border: 2px solid #000;
+
+}
+#third .container .title h2{
+	margin-top: 4px;
+}
+#third .container img{
+	transform: scale(1.1);
+}
+
+.preview{
+	color: #ff0;
+}
+#third .container a{
+	position: absolute;
+	width: 150px;
+	height:50px;
+	background: #ff0;
+	color:#000;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	text-transform: uppercase;
+	z-index :1;
+	border : 2px solid #000;
+	text-decoration: none;
+
+}
+
+#third .container .preview a{
+	top:-2%;
+	left: -25%;
+	}
+
+#third .container .next a{
+	top:85%;
+	left:100%;
+}
+
+
+#four{
+	position: absolute;
+	top:0;
+	left:100%;
+	width:100%;
+	height:100%;
+	background-color:black;
+	background-size: cover;
+
+}
+
+#four .container{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+
+}
+
+#four .container .title{
+	position: absolute;
+	top:-30%;
+	left:35%;
+	width: 100px;
+	height: 100px;
+	background: #ff0;
+	z-index :1;
+	text-align: center;
+	font-size: 55px;
+	color: #000;
+	border: 2px solid #000;
+
+}
+#four .container .title h2{
+	margin-top: 4px;
+}
+#four .container img{
+	transform: scale(1.1);
+}
+
+.preview{
+	color: #ff0;
+}
+#four .container a{
+	position: absolute;
+	width: 150px;
+	height:50px;
+	background: #ff0;
+	color:#000;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	text-transform: uppercase;
+	z-index :1;
+	border : 2px solid #000;
+	text-decoration: none;
+
+}
+
+#four .container .preview a{
+	top:-2%;
+	left: -25%;
+	}
+
+#four .container .next a{
+	top:85%;
+	left:100%;
+}*/
